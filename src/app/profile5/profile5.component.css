@@ -1,0 +1,70 @@
+/* Base styles */
+
+/* Style for the article container */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for headings */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for paragraphs */
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for lists */
+  ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  
+  /* For screens smaller than 768px (e.g., tablets) */
+  @media (max-width: 768px) {
+    article {
+      padding: 15px;
+    }
+  }
+  
+  /* For screens smaller than 576px (e.g., smartphones) */
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    li {
+      font-size: 14px;
+    }
+  }

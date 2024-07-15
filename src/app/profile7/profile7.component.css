@@ -1,0 +1,67 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Doctor profile container */
+  .doctor-profile {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Doctor information section */
+  .doctor-info {
+    text-align: center;
+  }
+  
+  .doctor-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .doctor-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Education qualifications section */
+  .education-qualifications,
+  .services-offered {
+    margin-top: 20px;
+  }
+  
+  .education-qualifications h3,
+  .services-offered h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .education-qualifications ul,
+  .services-offered ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-qualifications li,
+  .services-offered li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #666;
+  }

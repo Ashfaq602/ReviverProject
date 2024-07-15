@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- <style> -->
+    <!-- /* body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    p {
+      text-align: center;
+    } */
+  /* </style> */ -->
+</head>
+
+<body>
+
+  <div class="container">
+    <h3>REGISTRATION</h3>
+    <form #registerForm="ngForm" (ngSubmit)="registration()">
+      <div>
+        <label for="name">First Name:</label>
+        <input type="text" [(ngModel)]="name" name="name" #FName="ngModel" required minlength="3" maxlength="20">
+        <div *ngIf="FName.errors?.['required'] && FName.touched" style="color: red;">Please enter a valid first name</div>
+        <div *ngIf="FName.errors?.['minlength'] && FName.touched" style="color: red;">Minimum length: 3 characters</div>
+        <div *ngIf="FName.errors?.['maxlength'] && FName.touched" style="color: red;">Maximum length: 20 characters</div>
+       
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" [(ngModel)]="age" name="age" #Age="ngModel" required min="18" max="100">
+        <div *ngIf="Age.errors?.['required'] && Age.touched" style="color: red;">Please enter your age</div>
+        <div *ngIf="Age.errors?.['min'] && Age.touched" style="color: red;">Minimum age: 18</div>
+        <div *ngIf="Age.errors?.['max'] && Age.touched" style="color: red;">Maximum age: 100</div>
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <select [(ngModel)]="gender" name="gender" #Gender="ngModel" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <div *ngIf="Gender.errors?.['required'] && Gender.touched" style="color: red;">Please select your gender</div>
+      </div>
+      <div>
+        <label for="emailId">Email:</label>
+        <input type="email" [(ngModel)]="emailId" name="emailId" #EmailId="ngModel" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" minlength="10" maxlength="30">
+        <div *ngIf="EmailId.errors?.['required'] && EmailId.touched" style="color: red;">Please enter a valid email</div>
+        <div *ngIf="EmailId.errors?.['pattern'] && EmailId.touched" style="color: red;">Please enter a valid email address</div>
+        <div *ngIf="EmailId.errors?.['minlength'] && EmailId.touched" style="color: red;">Minimum length: 10 characters</div>
+        <div *ngIf="EmailId.errors?.['maxlength'] && EmailId.touched" style="color: red;">Maximum length: 30 characters</div>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" [(ngModel)]="password" name="password" #Password="ngModel" required minlength="5" maxlength="20">
+        <div *ngIf="Password.errors?.['required'] && Password.touched" style="color: red;">Please enter a valid password</div>
+        <div *ngIf="Password.errors?.['minlength'] && Password.touched" style="color: red;">Minimum length: 5 characters</div>
+        <div *ngIf="Password.errors?.['maxlength'] && Password.touched" style="color: red;">Maximum length: 20 characters</div>
+      </div>
+      <div>
+        <label for="conformpassword">ConformPassword</label>
+        <input type="password" [(ngModel)]="password" name="password" #Password="ngModel" required minlength="5" maxlength="20">
+        <div *ngIf="Password.errors?.['required'] && Password.touched" style="color: red;">Please enter a valid password</div>
+        <div *ngIf="Password.errors?.['minlength'] && Password.touched" style="color: red;">Minimum length: 5 characters</div>
+        <div *ngIf="Password.errors?.['maxlength'] && Password.touched" style="color: red;">Maximum length: 20 characters</div>
+        <div *ngIf="password.value !== conformpassword.value && conformpassword.touched" style="color: red;">Passwords do not Match</div> 
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p>If you are already registered, please <a routerLink="/login">Login</a></p>
+  </div>
+
+
+
+
+  <footer class="footer">
+  
+        <div class="row">
+            <div class="col-md-6">
+                <h3>About Us</h3>
+                <p>© Copyright 2024 - HYDERABAD INSTITUTE OF ONCOLOGY PRIVATE LIMITED (Reviver Hospitals). All Rights Reserved..</p>
+            </div>
+        </div>
+  
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .footer h3 {
+    color: #fff;
+  }
+
+  .footer p {
+    color: #ccc;
+  }
+  .login-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .login-box {
+      width: 90%;
+    }
+  }
+
+  .btn-login {
+    width: 100%;
+  }
+.login-box{
+    height:400px;
+    width:100%;
+   
+    margin-top: 20px;
+    margin-bottom: 250px;
+}

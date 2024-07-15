@@ -1,0 +1,23 @@
+
+
+
+
+
+
+<div class="card-container">
+    <div *ngFor="let medicine of medicines.slice(0,4)" class="card">
+      <div class="card-content">
+        <img src="{{ medicine.image }}"/>
+        <h3>Id:{{ medicine.id }}</h3>
+        <p>Name: {{ medicine.name }}</p>
+        <p>Price: {{ medicine.price }}</p>
+        <p>Description:{{medicine.descr}}</p>
+      </div>
+     <!-- HTML -->
+<!-- <button class="btn btn-primary add-to-cart-btn" (click)="addtocart(medicine)">Add to Cart</button> -->
+ <button class="btn btn-primary add-to-cart-btn" (click)="addToCart(medicine)" routerLink="login">Add to Cart</button>
+
+
+    </div>
+  
+</div>

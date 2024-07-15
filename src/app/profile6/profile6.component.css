@@ -1,0 +1,68 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* Doctor profile container */
+  .kartika-reddy-doctor-profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Doctor information section */
+  .kartika-reddy-doctor-info {
+    text-align: center;
+  }
+  
+  .kartika-reddy-doctor-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .kartika-reddy-doctor-name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .kartika-reddy-doctor-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Education qualifications section */
+  .kartika-reddy-education-qualifications,
+  .kartika-reddy-services-offered {
+    margin-top: 20px;
+  }
+  
+  .kartika-reddy-education-qualifications h3,
+  .kartika-reddy-services-offered h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .kartika-reddy-education-qualifications ul,
+  .kartika-reddy-services-offered ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .kartika-reddy-education-qualifications li,
+  .kartika-reddy-services-offered li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #666;
+  }

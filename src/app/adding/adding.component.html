@@ -1,0 +1,10 @@
+<p>adding works!</p>
+<h2>Add New Blog</h2>
+<form (submit)="onSubmit()">
+    <div *ngFor="let blog of blogs">
+   <img src="{{ blog.image }}"/>
+  <label>Title: <input type="text" [(ngModel)]="title" required></label><br>
+  <label>Content: <input type="text" [(ngModel)]="content" required></label><br>
+  </div>
+  <button type="submit">Add Blog</button>
+</form>

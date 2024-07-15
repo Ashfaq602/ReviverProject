@@ -1,0 +1,128 @@
+/* .body{
+    height:100%;
+    width:100%
+}
+.card{
+    height:600px;
+    width:1300px;
+    border:2px solid black;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.image1{
+    height:200x;
+    width:430px;
+    border:2px solid black;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.imagebox{
+    display: flex;
+    border:1px solid black;
+}
+.text1{
+    color: chocolate;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+button{
+    background-color:rgb(235, 137, 25);
+    height:40px;
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 320px;
+    transition: 3s;
+    border-radius: 20px;
+    height:100px;
+    width:300px;
+    
+}
+button:hover{
+    transform: scale(0.5);
+}   */
+
+.body {
+    background-color: whitesmoke;
+    margin: 0%;
+  }
+  
+  .card {
+    height: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 30px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .image {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+  
+  .timings {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .text {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .details {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .viewprofile {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    border: 0 solid rgb(33, 20, 224);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    
+   
+    transition: transform 0.3s ease;
+  }
+  
+  h2 {
+    color: rgb(20, 14, 3);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+  }

@@ -1,0 +1,14 @@
+
+<div class="card-container">
+    <div *ngFor="let medicine of medicines" class="card">
+      <div class="card-content">
+        <img src="{{ medicine.image }}"/>
+        <h3>Id:{{ medicine.id }}</h3>
+        <p>Name: {{ medicine.name }}</p>
+        <p>Price: {{ medicine.price }}</p>
+        <p>Description:{{medicine.descr}}</p>
+      </div>
+      <!-- <button style="color:crimson;background-color: cornflowerblue; border-radius: 20px; border:none">Add to cart</button> -->
+    </div>
+  
+</div>

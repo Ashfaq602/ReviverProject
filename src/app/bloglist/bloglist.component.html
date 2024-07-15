@@ -1,0 +1,13 @@
+<div class="card-container">
+    <div *ngFor="let blog of blogs" class="card">
+      <div class="card-content">
+        <img src="{{ blog.image }}"/>
+        <h3>Id:{{ blog.id }}</h3>
+        <p>Title: {{ blog.title }}</p>
+        <p>Content: {{ blog.content }}</p>
+
+       
+      </div>
+      <button (click)="deleteBlog(blog.id)">Delete</button>
+    </div>
+</div>

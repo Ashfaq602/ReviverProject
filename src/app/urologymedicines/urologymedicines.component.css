@@ -1,0 +1,45 @@
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensure equal spacing between cards */
+}
+
+/* Card */
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card image */
+.card img {
+  height: 200px; /* Set fixed height for images */
+  width: 100%; /* Ensure image fills the entire width of the card */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Rounded corners for top */
+}
+
+/* Card content */
+.card-content {
+  padding: 10px;
+}
+
+/* Button */
+.add-to-cart-btn {
+  margin-top: auto; /* Align button to the bottom */
+  padding: 10px 20px; /* Add padding to increase touch area */
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .add-to-cart-btn {
+    padding: 8px 16px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}

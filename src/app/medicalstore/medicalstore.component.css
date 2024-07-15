@@ -1,0 +1,39 @@
+/* Navigation bar */
+.navbar {
+  background-color: #007bff; /* Set background color */
+}
+
+.navbar-brand {
+  color: #1b6ae0; /* Set text color */
+  font-weight: bold; /* Set font weight */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  background-color: #eef1f1; /* Set color of the toggler icon */
+}
+
+.navbar-nav .nav-link {
+  color: #d31616;
+  font-weight: bold; 
+  margin-left: 10px;/* Set text color for nav links */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Highlight active link */
+}
+
+/* Router outlet */
+.router-outlet {
+  padding: 20px; /* Add padding around router outlet content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}

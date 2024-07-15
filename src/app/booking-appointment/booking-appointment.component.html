@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div *ngFor="let doctor of doctors" class="doctor-card">
+      <div class="card-content">
+        <img src="{{ doctor.image }}" alt="{{ doctor.name }}">
+        <h2>{{ doctor.name }}</h2>
+        <p><strong>Designation:</strong> {{ doctor.designation }}</p>
+        <p><strong>Unit:</strong> {{ doctor.unit }}</p>
+        <p><strong>Educational Qualification:</strong> {{ doctor.educationalQualification }}</p>
+        <p><strong>Years of Experience:</strong> {{ doctor.years_of_experience }}</p>
+      </div>
+      <button (click)="bookanAppointment()">Book an Appointment</button>
+    </div>
+  </div>
+  

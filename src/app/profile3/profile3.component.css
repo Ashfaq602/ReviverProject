@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Doctor Profile Styles */
+  .doctor-profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-info {
+    text-align: center;
+  }
+  
+  .doctor-info img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Additional Styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
